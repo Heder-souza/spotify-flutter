@@ -39,12 +39,22 @@ class SpotifyScreem extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: GestureDetector(
             onTap: () {
-              print("Perfil Clicado");
+              print("Perfil Clicado")
+              ;
             },
             child: CircleAvatar(
               radius: 5,
               backgroundColor: Colors.grey,
-              child: Icon(Icons.person, size: 36, color: Colors.white),
+              child: Icon(Icons.person, size: 36, color: Colors.white
+              onPressed: () {
+             // print("Botão Cadastrar pressionado");
+             Navigator.push(
+              context, 
+              MaterialPageRoute(
+                builder: (context) => PlayListSreen()
+                )
+              );
+            },),
             ),
           ),
         ),
