@@ -1,1 +1,3 @@
-# spotify-flutter
+# app_spotify
+
+A new Flutter project.
